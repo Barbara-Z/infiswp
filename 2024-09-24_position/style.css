@@ -1,0 +1,8 @@
+div {
+    position: relative, absolute, fixed, sticky z-index 1;
+}
+
+.bar {
+    position: relative;
+    z-index: 6;
+}
