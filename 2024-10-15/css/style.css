@@ -1,0 +1,51 @@
+#body {
+    background-color: #5286c1;
+}
+
+#nav {
+    color: #4371a3;
+    width: 880px;
+    margin-left: 15px;
+}
+
+#wetter {
+    justify-content: center;
+    align-items: center;
+}
+
+#top {
+    position: relative;
+    background-color: #4371a3;
+    margin-top: 100px;
+    height: 40px;
+    width: 880px;
+    margin-left: 25px;
+    justify-content: flex-end;
+}
+
+#main {
+    background-color: white;
+    width: 880px;
+    margin-left: 25px;
+}
+
+#collapse {
+    justify-content: flex-end;
+    background-color: white;
+    width: 880px;
+    margin-left: 25px;
+}
+
+details {
+    text-decoration: none;
+}
+
+summary {
+    font-size: 15px;
+    cursor: pointer;
+    list-style: none;
+}
+
+summary:hover {
+    text-decoration: underline;
+}
