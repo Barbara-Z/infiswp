@@ -17,7 +17,7 @@
 <body id="body" class="container">
     <header>
         <div id="nav" class="container">
-            <nav class="navbar bg-body-tertiary">
+            <nav>
                 <a href="https://tv.orf.at/">Fernsehen</a>
                 <a href="https://on.orf.at/">ORF_ON</a>
                 <a href="https://sound.orf.at/">Sound</a>
@@ -32,28 +32,26 @@
         </div>
     </header>
     <main>
-        <div id="wetter" class="btn">
-
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Vorarlberg</a></li>
-                <li><a class="dropdown-item" href="#">Tirol</a></li>
-                <li><a class="dropdown-item" href="#">Salzburg</a></li>
-                <li><a class="dropdown-item" href="#">Kärnten</a></li>
-                <li><a class="dropdown-item" href="#">Steiermark</a></li>
-                <li><a class="dropdown-item" href="#">Oberösterreich</a></li>
-                <li><a class="dropdown-item" href="#">Niederösterreich</a></li>
-                <li><a class="dropdown-item" href="#">Wien</a></li>
-                <li><a class="dropdown-item" href="#">Burgenland</a></li>
-            </ul>
-        </div>
-        <div class="container">
-            <div class="orf"><img src="images/news_ORF.png" alt="ORF" width="160">
-            </div>
-            <div class="wetter"><button type="button" class="btn btn-info">Wetter</button>
+        <div id="news" class="container">
+            <div id="wetter"><button type="button" class="btn btn-info">Wetter</button>
                 <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Vorarlberg</a></li>
+                    <li><a class="dropdown-item" href="#">Tirol</a></li>
+                    <li><a class="dropdown-item" href="#">Salzburg</a></li>
+                    <li><a class="dropdown-item" href="#">Kärnten</a></li>
+                    <li><a class="dropdown-item" href="#">Steiermark</a></li>
+                    <li><a class="dropdown-item" href="#">Oberösterreich</a></li>
+                    <li><a class="dropdown-item" href="#">Niederösterreich</a></li>
+                    <li><a class="dropdown-item" href="#">Wien</a></li>
+                    <li><a class="dropdown-item" href="#">Burgenland</a></li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="orf"><img src="images/news_ORF.png" alt="ORF" width="160"></div>
             </div>
         </div>
         <div id="top">
@@ -61,8 +59,6 @@
                 <img id="glocke" src="images/alarmbell_85778.png" alt="Glocke" width="25" height="25">
             </a>
         </div>
-
-
         <div id="main" class="container">
             <div class="img-area1">
                 <div class="img-item">
@@ -98,11 +94,11 @@
             </div>
             <div id="trump">
                 <h6>„Ave_Maria“ und Notfälle:</h6>
-                „Abnehmspritze“ für übergewichtige Arbeitslose
+                Trump mit skurrilem Wahlkampfauftritt
             </div>
             <div id="gb">
                 <h6>Großbritannien:</h6>
-                Trump mit skurrilem Wahlkampfauftritt
+                „Abnehmspritze“ für übergewichtige Arbeitslose
             </div>
             <div id="religion">Religion</div>
             <div id="alpen">
@@ -266,13 +262,14 @@
     </main>
     <footer>
         <div id="footer">
-            <nav class="navbar bg-body-tertiary">
+            <nav>
                 <a href="https://der.orf.at/kontakt">Kontakt</a>
                 <a href="https://orf.at/stories/datenschutz">Datenschutzerklärung</a>
-                <a href="#">Datenschutzeinstellungen</a>
                 <a href="https://orf.at/stories/impressum/">Offenlegung</a>
+                <a href="#">Datenschutzeinstellungen</a>
                 <a href="https://zukunft.orf.at/show_content2.php?s2id=183">Bekanntgabe laut ORF-G</a>
                 <a href="https://der.orf.at/unternehmen/gremien/publikumsrat/">Publikumsrat</a>
+            </nav>
         </div>
     </footer>
 
