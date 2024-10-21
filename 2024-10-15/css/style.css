@@ -180,10 +180,14 @@
     background-color: white;
     width: 880px;
     margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 details {
     text-decoration: none;
+
 }
 
 summary {
@@ -194,4 +198,11 @@ summary {
 
 summary:hover {
     text-decoration: underline;
+}
+
+#footer {
+    color: #4371a3;
+    width: 880px;
+    margin-left: 25px;
+    margin-top: 10px;
 }
