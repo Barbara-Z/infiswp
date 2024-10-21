@@ -65,6 +65,15 @@
     margin: 3px;
 }
 
+#gb {
+    position: absolute;
+    left: 370px;
+    top: 360px;
+    height: 100px;
+    width: 200px;
+    z-index: 100;
+}
+
 #collapse {
     background-color: white;
     width: 880px;
