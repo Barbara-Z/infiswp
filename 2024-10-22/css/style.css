@@ -1,0 +1,228 @@
+#body {
+    background-color: #5286c1;
+}
+
+#nav {
+    background-color: #4371a3;
+    color: white;
+    width: 880px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+nav>a {
+    color: white;
+    text-decoration: none;
+}
+
+#nav>a:hover {
+    text-decoration: underline;
+    color: #bbb;
+}
+
+#news {
+    height: 30px;
+}
+
+.orf {
+    display: flex;
+    align-items: center;
+}
+
+#wetter {
+    margin-top: 30px;
+    margin-left: 400px;
+}
+
+#top {
+    position: relative;
+    background-color: #4371a3;
+    margin-top: 50px;
+    height: 40px;
+    width: 880px;
+    margin-left: 25px;
+}
+
+#glocke {
+    position: relative;
+    top: 5px;
+    left: 845px;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+    width: 880px;
+    margin-left: 25px;
+}
+
+
+.img-area1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-area2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-item {
+    margin: 3px;
+}
+
+#gb {
+    position: absolute;
+    left: 370px;
+    top: 250px;
+    height: 100px;
+    width: 200px;
+    z-index: 100;
+    color: white;
+}
+
+#trump {
+    position: absolute;
+    left: 115px;
+    top: 265px;
+    height: 100px;
+    width: 200px;
+    z-index: 100;
+    color: white;
+}
+
+#alpen {
+    position: absolute;
+    left: 680px;
+    top: 275px;
+    height: 100px;
+    width: 200px;
+    z-index: 100;
+    color: white;
+}
+
+#religion {
+    position: absolute;
+    left: 900px;
+    top: 180px;
+    height: 100px;
+    width: 200px;
+    z-index: 100;
+    color: white;
+}
+
+#deep {
+    position: absolute;
+    left: 740px;
+    top: 410px;
+    height: 100px;
+    width: 200px;
+    z-index: 100;
+    color: white;
+}
+
+#oe {
+    position: absolute;
+    left: 885px;
+    top: 350px;
+    height: 100px;
+    width: 200px;
+    z-index: 100;
+    color: white;
+}
+
+#science {
+    position: absolute;
+    left: 112px;
+    top: 350px;
+    height: 100px;
+    width: 200px;
+    z-index: 100;
+    color: white;
+}
+
+#frosch {
+    position: absolute;
+    left: 112px;
+    top: 450px;
+    height: 100px;
+    width: 200px;
+    z-index: 100;
+    color: white;
+}
+
+#sport {
+    position: absolute;
+    left: 685px;
+    top: 350px;
+    height: 100px;
+    width: 200px;
+    z-index: 100;
+    color: white;
+}
+
+#greg {
+    position: absolute;
+    left: 525px;
+    top: 420px;
+    height: 100px;
+    width: 200px;
+    z-index: 100;
+    color: white;
+}
+
+#EU {
+    position: absolute;
+    left: 310px;
+    top: 395px;
+    height: 100px;
+    width: 200px;
+    z-index: 100;
+    color: white;
+}
+
+
+#collapse {
+    background-color: white;
+    width: 880px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+details {
+    text-decoration: none;
+
+}
+
+summary {
+    font-size: 17px;
+    cursor: pointer;
+    list-style: none;
+}
+
+summary:hover {
+    text-decoration: underline;
+}
+
+#footer {
+    background-color: #4371a3;
+    color: white;
+    width: 880px;
+    height: 30px;
+    margin-left: 25px;
+    margin-top: 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+#footer:hover {
+    text-decoration: underline;
+}
