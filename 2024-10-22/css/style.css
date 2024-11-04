@@ -54,25 +54,105 @@ nav>a {
 #main {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
     background-color: white;
     width: 880px;
     margin-left: 25px;
 }
 
-
-.img-area1 {
-    display: flex;
-    justify-content: space-between;
-}
-
-.img-area2 {
-    display: flex;
-    justify-content: space-between;
-}
-
 .img-item {
     margin: 3px;
+}
+
+.img-item1 {
+    grid-area: eins;
+}
+
+.img-item2 {
+    grid-area: zwei;
+}
+
+.img-item3 {
+    grid-area: drei;
+}
+
+.img-item4 {
+    grid-area: vier;
+}
+
+.img-item5 {
+    grid-area: fünf;
+}
+
+.img-item6 {
+    grid-area: sechs;
+}
+
+.img-item7 {
+    grid-area: sieben;
+}
+
+/*#trump {
+    grid-area: trump;
+}
+
+#gb {
+    grid-area: gb;
+}
+
+#alpen {
+    grid-area: alpen;
+}
+
+#deep {
+    grid-area: deep;
+}
+
+#frosch {
+    grid-area: frosch;
+}
+
+#greg {
+    grid-area: greg;
+}
+
+#EU {
+    grid-area: EU;
+}
+
+.text-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    z-index: 100;
+    color: white;
+    gap: 4px;
+    grid-template-areas:
+        "trump gb frosch alpen"
+        "EU greg deep alpen";
+}*/
+
+.img-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4px;
+    grid-template-areas:
+        "eins zwei drei vier"
+        "fünf sechs sieben vier";
+
+}
+
+@media screen and (max-width: 800px) {
+    .img-area {
+        grid-template-columns: 1fr 1fr 1fr fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "eins drei  drei "
+            "zwei fünf vier"
+            "sechs sieben vier";
+    }
 }
 
 #gb {

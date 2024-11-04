@@ -1,0 +1,122 @@
+body {
+    background-color: #f4f6fb;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#top {
+    background-color: white;
+}
+
+#Anzeige {
+    color: white;
+}
+
+#header {
+    font-size: small;
+}
+
+#Angebote {
+    display: flex;
+    justify-content: space-around;
+    font-size: larger;
+}
+
+#Angebote:hover {
+    text-decoration: underline;
+    color: #00a4e7;
+}
+
+.card-body {
+    color: white;
+    background-color: #00a4e7;
+}
+
+.card1 {
+    grid-area: eins;
+}
+
+.card2 {
+    grid-area: zwei;
+}
+
+.card3 {
+    grid-area: drei;
+}
+
+.card4 {
+    grid-area: vier;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+    grid-template-areas:
+        "eins zwei drei vier";
+}
+
+@media screen and (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "eins zwei"
+            "drei vier";
+    }
+}
+
+#Marken {
+    background-color: white;
+}
+
+#Kategorien {
+    background-color: white;
+}
+
+#Bsp {
+    display: flex;
+    flex-direction: row;
+}
+
+#footer {
+    background-color: white;
+    font-size: small;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style-type: none;
+}
+
+#erstes {
+    grid-area: erstes;
+}
+
+#zweites {
+    grid-area: zweites;
+}
+
+#drittes {
+    grid-area: drittes;
+}
+
+#viertes {
+    grid-area: viertes;
+}
+
+#footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+    grid-template-areas:
+        "erstes zweites drittes viertes";
+}
