@@ -1,4 +1,4 @@
-const filePath = '../nmap-datenfiles/2024-11-05T13:12:00+01:00';
+const filePath = '../nmap-datenfiles/2024-11-05T13_08_00_01_00';
 try {
     const dirEntries = await Deno.readDir('../nmap-datenfiles');
     for await (const dirEntry of dirEntries) {
@@ -9,4 +9,4 @@ try {
     console.log(lines);
 } catch (err) {
     console.error('Error reading the file:', err);
-}
+} 
