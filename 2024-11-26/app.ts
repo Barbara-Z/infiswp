@@ -1,6 +1,6 @@
 
 const dataPath = './nmap-datenfiles';
-const outputFilePath = './out.csv';
+const outputFilePath = './outfile.csv';
 
 function parseDate(dateStr: string): Date {
     const p = dateStr.split('_');
