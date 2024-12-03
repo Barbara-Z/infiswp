@@ -1,0 +1,63 @@
+Datenbanken:
+- SQL: Structures Query Language
+- besteht aus: Spalten (collumn) und Zeilen (row)
+- Datenbanken können in verschiedenen Formaten gespeichert werden (z.B. CSV, databank db)
+- Datenbanksysteme: Oracle, Microsoft SQL Server, IBM DB2, MySQL, PostgreSQL 
+- sqlite3
+    splite3 daten.db: 
+    aussteigen: ctl+d 
+    ls -l: list: gibt die Dateiinformationen aus z.B. wird die datei von oben (daten.db) eingezeigt.
+    create table tabelle1 (datum date);
+    .schema: sagt welche Tabellen es in der Datenbank gibt und wie diese erzeugt wurden
+    ddl: data definition Language: z.B. create table
+    dml: data modification Language: z.B. insert, update, delete -noch nicht benutzt    create table: [date] [string] [string]
+    $ sqlite3 nmap.db: erstellt eine Datenbank
+    Create Table: create table uphosts (datum date, ip text, mac text);
+    csv importieren: sqlite> .mode csv
+                    sqlite> .separator ;
+                    sqlite> .import outfile.csv uphosts
+
+
+
+
+app.js -> Wichtig 
+Bsp: 
+    "Ordne einem Array die zweiten Daten zu" a = b([2]);
+    String Split: const lines = data.split(' '); //teilt einen String in einzelne Arrays ein, indem es an den einzelnen Lehrzeichen geteilt wird
+
+    "Alle 'e's' in einem String durch 'ee' ersetzen":
+    const parts = data.split('e'); //teilt an den e's
+    return parts.join('ee'); //fügt die einzelnen Teile wieder zusammen mit ee
+
+    "Alle 'a's entfernen": 
+    const parts = data.split('a'); //teilt an den a's
+    return parts.join(''); //fügt die einzelnen Teile wieder zusammen ohne a
+
+    "Schreibe eine Funktion, welche das Quadrat des Parameters ausgibt":
+    function berechneQuadrat(parameter) {
+        return parameter * parameter; //berechnet das Quadrat des Parameters
+    }
+
+    "Gib einen Text aus, in dem jedes Wort in einer neuen zeile steht mit `fot ..of`:
+    const text = "Das ist ein Beispieltext mit mehreren Wörtern.";
+    const woerter = text.split(' '); // Den Text in ein Array von Wörtern aufteilen
+    for (const wort of woerter) {     // Mit einer for .. of Schleife jedes Wort ausgeben
+    console.log(wort); // Gibt jedes Wort in einer neuen Zeile aus
+    }
+
+
+Befehle:
+    Return: gibt was zurück z.B.: "wie alt bist du?" "ich bin 15" *schreibt die Antwort in eine Variable*  z.B.: return new Date 
+    if else: falls Bedingungen nicht zustimmen, wird else ausgeführt
+    const vs let: const ist eine Konstante, die nicht geändert werden kann, let ist eine Variable, die man die ganze Zeit ändern kann
+    continue vs break: continue springt zum nächsten Schleifensatz, break beendet die Schleife
+    '||': oder '&&': und
+    template Strings (``): ermöglichen die Verwendung von Ausdrücken innerhalb von Strings
+    try vs catch: try wird ausgeführt, wenn es keine Fehler gibt, catch wird ausgeführt, wenn es einen Fehler gibt
+    for schleife: 
+    return new Date(`${p[0]}:${p[1]}:${p[2]}+${p[3]}:${p[4]}`); :Template String: $: Platzhalter {}: wird ausgewertet p[0]: Platzhalter: Daten beziehen sich auf Arrays von 'p'
+
+
+Fragen später: 
+    Const in loops? wird überschrieben, neue Variable wird erstellt, oder wird die ursprüngliche Variable geändert?
+    - const existiert nur in diesem Moment, in dem es ausgeführt wird, wenn also die Schleife wiederholt wird in das vorrige const weg

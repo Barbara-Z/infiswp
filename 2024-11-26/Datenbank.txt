@@ -1,7 +1,0 @@
-Datenbanken:
-- SQL: Structures Query Language
-- besteht aus: Spalten (collumn) und Zeilen (row)
-- Datenbanken können in verschiedenen Formaten gespeichert werden (z.B. CSV, databank db)
-- Datenbanksysteme: Oracle, Microsoft SQL Server, IBM DB2, MySQL, PostgreSQL 
-
-Create Table: [date] [string] [string]
