@@ -4,7 +4,7 @@ Datenbanken:
 - Datenbanken können in verschiedenen Formaten gespeichert werden (z.B. CSV, databank db)
 - Datenbanksysteme: Oracle, Microsoft SQL Server, IBM DB2, MySQL, PostgreSQL 
 - sqlite3
-    splite3 daten.db: 
+    sqlite3 daten.db: 
     aussteigen: ctl+d 
     ls -l: list: gibt die Dateiinformationen aus z.B. wird die datei von oben (daten.db) eingezeigt.
     create table tabelle1 (datum date);
