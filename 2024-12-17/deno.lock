@@ -1,0 +1,61 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@std/assert@1": "1.0.9",
+    "jsr:@std/internal@^1.0.5": "1.0.5",
+    "npm:@faker-js/faker@^9.3.0": "9.3.0"
+  },
+  "jsr": {
+    "@std/assert@1.0.9": {
+      "integrity": "a9f0c611a869cc791b26f523eec54c7e187aab7932c2c8e8bea0622d13680dcd",
+      "dependencies": [
+        "jsr:@std/internal"
+      ]
+    },
+    "@std/internal@1.0.5": {
+      "integrity": "54a546004f769c1ac9e025abd15a76b6671ddc9687e2313b67376125650dc7ba"
+    }
+  },
+  "npm": {
+    "@faker-js/faker@9.3.0": {
+      "integrity": "sha512-r0tJ3ZOkMd9xsu3VRfqlFR6cz0V/jFYRswAIpC+m/DIfAUXq7g8N7wTAlhSANySXYGKzGryfDXwtwsY8TxEIDw=="
+    }
+  },
+  "remote": {
+    "https://deno.land/std@0.42.0/fmt/colors.ts": "e34eb7d7f71ef64732fb137bf95dc5a36382d99c66509c8cef1110e358819e90",
+    "https://deno.land/std@0.42.0/fs/copy.ts": "35f1a5a94de06534c4c8f9054f94aee6daaaed53f4fd739af672045b7e953849",
+    "https://deno.land/std@0.42.0/fs/empty_dir.ts": "f612547953aa72414ee6fe7976b09416e010eace1005a1aa359b1170bdbb187c",
+    "https://deno.land/std@0.42.0/fs/ensure_dir.ts": "30b74096b8d23dead9df332d5ad69f684ad3f96e70aad6262649dff025bf9c44",
+    "https://deno.land/std@0.42.0/fs/ensure_file.ts": "39e10ca94c9514c3a2bfa80974504c12fa322704e24d38ef3c89d1b60f7a4014",
+    "https://deno.land/std@0.42.0/fs/ensure_link.ts": "cdf45c1461d80c152c9ed7af9adc020aea80f7b7f3d5fd9f8109ad865ec14e87",
+    "https://deno.land/std@0.42.0/fs/ensure_symlink.ts": "4e50488b1c312199c5802f440f49e7017899893720abdf753ed1ecdcd0fb0914",
+    "https://deno.land/std@0.42.0/fs/eol.ts": "4a0b2a612e0639b76d9c5fab0392e7bf1a158a7dab191ff7b7564870a1173812",
+    "https://deno.land/std@0.42.0/fs/exists.ts": "6012ed95a822629401133435111d58fb07c265d19d463bf3a31be8f0bf8f1dff",
+    "https://deno.land/std@0.42.0/fs/expand_glob.ts": "a1e302586a60b336be219bddbbdde1c4e088cc2707d7b78313fdaefab2959ef7",
+    "https://deno.land/std@0.42.0/fs/mod.ts": "028ddfb20f4cf007732c96f0bf7018eb790aff3a5fb900928b60b2d78a378ef0",
+    "https://deno.land/std@0.42.0/fs/move.ts": "50007df0398a17110dcc30718eb52de5979bffa6826cabeb6927e37ded8d817e",
+    "https://deno.land/std@0.42.0/fs/read_file_str.ts": "707a60c6aed8e399e7e9f753968ef6f7f65c29901235a8bb43722e6d06112ecf",
+    "https://deno.land/std@0.42.0/fs/read_json.ts": "6922a9adc50cd2a7233298fd7b7ad9062d8602a55d4abb2b72d23ef0268b1306",
+    "https://deno.land/std@0.42.0/fs/utils.ts": "6a518f26cdfdac44c1da3617df77bcfc9debc0df30f1453a2803751494d96dcf",
+    "https://deno.land/std@0.42.0/fs/walk.ts": "e2efde1ec450bdcf02b622da2bfc9597ea78cad4db78a231bef4901ef6904313",
+    "https://deno.land/std@0.42.0/fs/write_file_str.ts": "58fb1741838eba54ee83c825a5fd9beac7d48828dc6c1875079751a73ed55b9d",
+    "https://deno.land/std@0.42.0/fs/write_json.ts": "d89894b1ff18e2e2bdda474004cf3d7c3ae3a84a3d432aacdb71c67d02cb63a2",
+    "https://deno.land/std@0.42.0/path/common.ts": "ce674b41349bea12d4678438cdd97f2439dfb891285280276400a2815415a574",
+    "https://deno.land/std@0.42.0/path/constants.ts": "b68b1303095ed9dd02af457aadcab915b185cd19fcd07b184accdde516d1af7f",
+    "https://deno.land/std@0.42.0/path/glob.ts": "4ffec6d4da258b907f7c94a4362d27d294cc1b7fc82856d004cf56b618ffeaa9",
+    "https://deno.land/std@0.42.0/path/globrex.ts": "30146377e2c49ea49f049a18b7d3a0504150ff29509d28f4938ef2711cf38302",
+    "https://deno.land/std@0.42.0/path/interface.ts": "89f6e68b0e3bba1401a740c8d688290957de028ed86f95eafe76fe93790ae450",
+    "https://deno.land/std@0.42.0/path/mod.ts": "5bbf3efabaf27c75bf1daa04d0bdecab60a48f98fb433d69741ca2cf328fc0c7",
+    "https://deno.land/std@0.42.0/path/posix.ts": "71a72458cb33bf86112cc5a99438b9ed5bee0c29507545c22d2566736987ca38",
+    "https://deno.land/std@0.42.0/path/utils.ts": "f50e0555b9838b96019f146f8c864a00d1a8e21e593933360f83b9bae1f2c6b6",
+    "https://deno.land/std@0.42.0/path/win32.ts": "daf5aa61a145f76260548fc55b6583984b06cc35c3d1ab8da20f1a72981df3d3",
+    "https://deno.land/std@0.42.0/testing/asserts.ts": "213fedbb90a60ae232932c45bd62668f0c5cd17fc0f2a273e96506cba416d181",
+    "https://deno.land/std@0.42.0/testing/diff.ts": "8f591074fad5d35c0cafa63b1c5334dc3a17d5b934f3b9e07172eed9d5b55553"
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@std/assert@1",
+      "npm:@faker-js/faker@^9.3.0"
+    ]
+  }
+}
