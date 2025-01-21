@@ -74,7 +74,7 @@ SELECT
 FROM
     products
 where
-    Unit is null;
+    Unit is null and SupplierID is not null;
 
 SELECT
     *
