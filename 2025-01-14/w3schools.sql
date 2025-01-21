@@ -81,7 +81,7 @@ SELECT
 from
     customers
 where
-    ContactName is null;
+    ContactName is null order by Country;
 
 SELECT
     *
@@ -95,4 +95,4 @@ SELECT
 from
     shippers
 where
-    Phone is not null;
+    Phone is not null order by ShipperID desc;
