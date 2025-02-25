@@ -1,3 +1,2 @@
-select product_id from products where low_fats = true and recyclable = true;
-
+select product_id from products where low_fats = 'Y' and recyclable = 'Y';
 select name from customer where referee_id != 2 or referee_id is null;
