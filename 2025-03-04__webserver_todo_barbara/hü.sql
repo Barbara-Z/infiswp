@@ -1,0 +1,2 @@
+1527: select patient_id, patient_name, conditions from patients where conditions like "% diab1%" or conditions like "diab1%"; 
+2356: select distinct(teacher_id), count(distinct(subject_id)) as cnt from teacher group by teacher_id;
