@@ -92,7 +92,23 @@ function onZielSelect() {
     render();
 }
 function onTicketKaufen() {
-    state.textAusgabe = `Fahrkarte nach: ${}\n Einzelpreis: € ${}\n Anzahl der Fahrgäste: ${state_fahrgaeste}\n Summe: € ${state.fahrpreis} gegeben: € ${} Restgeld: € ${}`;
+    if (!state.ziel) {
+        state.ausgabe = "Bitte wählen Sie ein Ziel!";
+    } else if (state.guthaben < state.fahrpreis) {
+        state.ausgabe = "Nicht genug Guthaben!";
+    } else {
+        const restgeld = state.guthaben - state.fahrpreis;
+        state.einnahmen += state.fahrpreis;
+        state.guthaben = 0;
+
+        state.ausgabe = `=== Fahrkarte nach ${state.ziel} ===\n` +
+                        `Einzelpreis: ${zieleUndPreise[state.ziel]} €\n` +
+                        `Anzahl der Fahrgäste: ${state.anzahlPersonen}\n` +
+                        `Summe: ${state.fahrpreis} €\n` +
+                        `Gegeben: ${state.fahrpreis + restgeld} €\n` +
+                        `Restgeld: ${restgeld} €\n` +
+                        `============================`;
+    }
     render();
 }
 function onAnzahlChange() {
