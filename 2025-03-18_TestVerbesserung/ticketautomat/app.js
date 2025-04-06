@@ -95,13 +95,13 @@ function onTicketKaufen() {
     if (!state.ziel) {
         state.ausgabe = "Bitte wählen Sie ein Ziel!";
     } else if (state.guthaben < state.fahrpreis) {
-        state.ausgabe = "Nicht genug Guthaben!";
+        state.textAusgabe = "Nicht genug Guthaben!";
     } else {
         const restgeld = state.guthaben - state.fahrpreis;
         state.einnahmen += state.fahrpreis;
         state.guthaben = 0;
 
-        state.ausgabe = `=== Fahrkarte nach ${state.ziel} ===\n` +
+        state.textAusgabe = `=== Fahrkarte nach ${state.ziel} ===\n` +
                         `Einzelpreis: ${zieleUndPreise[state.ziel]} €\n` +
                         `Anzahl der Fahrgäste: ${state.anzahlPersonen}\n` +
                         `Summe: ${state.fahrpreis} €\n` +
@@ -117,7 +117,7 @@ function onAnzahlChange() {
     render();
 }
 function onReset() {
-    "TODO";
+    todooo 
     render();
 }
 // 7.INIT BINDINGS

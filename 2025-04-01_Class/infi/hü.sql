@@ -1,0 +1,3 @@
+1581: select customer_id, count(*) as count_no_trans from visits left join transactions on visits.visit_id = transactions.visit_id  where transactions.transaction_id is null group by customer_id;
+1378: select unique_id, name from employeeuni right join employees on employeeuni.id = employees.id;
+577: select name, bonus.bonus from employee left join bonus on employee.empID = bonus.empID where bonus.bonus < 1000 or bonus is null;
