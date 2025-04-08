@@ -117,9 +117,16 @@ function onAnzahlChange() {
     render();
 }
 function onReset() {
-    todooo 
+    state.guthaben = 0;
+    state.anzahlPersonen = 1;
+    state.ziel = null;
+    state.fahrpreis = 0;
+    state.ausgabe = "Bitte wählen Sie ein Ziel";
+    anzahlPersonenInput.value = 1;
+    einwerfenInput.value = "";
     render();
 }
+
 // 7.INIT BINDINGS
 // These are the initial bindings of the event handlers, i.e.register the handlers of Pt. 6 with the DOM Node Refs of;
 // Pt. 3;
