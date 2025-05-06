@@ -1,74 +1,59 @@
-/*const decoder = new TextDecoder('utf-8'); //Decoder Objekt
-const data = Deno.readFileSync("fragen.json"); 
-const jsonString = decoder.decode(data);
-const jsonData = JSON.parse(jsonString);
-jsonData.forEach((_) => {  //kan statt _ auch anderes verwenden
-    console.log(_.frage); //function kriegt Element null dann eins und so weiter und wird auf Console ausgegeben
-});
-console.log(`Es gibt ${jsonData.length} Fragen.`);
+// Klasse Frage erstellen
+import { fragen } from "./fragen.js"; // Importiere die Fragen aus der JSON-Datei
+globalThis.fragen = fragen; // Globales Array für die Fragen
+class Frage {
+    constructor(frage, optionen, antwort) {
+        this.frage = frage;
+        this.optionen = optionen;
+        this.antwort = antwort;
+    }
 
-const decoder = new TextDecoder('utf-8'); //Decoder Objekt
-const data = Deno.readFileSync("fragen.json"); 
-const jsonString = decoder.decode(data);
-const jsonData = JSON.parse(jsonString);
+    // Methode zum Anzeigen der Frage und der Optionen
+    /*anzeigen() {
+        console.log(`Frage: ${this.frage}`);
+        console.log("Optionen:");
+        this.optionen.forEach((option, index) => {
+            console.log(`${index + 1}. ${option}`);
+        });
+    }*/
 
-let currentQuestionIndex = 0; // Track the current question index
-
-// Function to display the current question
-function displayQuestion() {
-    const questionElement = document.getElementById('question');
-    if (currentQuestionIndex < jsonData.length) {  //.length gibt die Anzahl der Elemente in einem Array
-        questionElement.textContent = jsonData[currentQuestionIndex].frage; // Display the current question
-    } else {
-        questionElement.textContent = "Keine weiteren Fragen."; // No more questions
+    // Methode zum Prüfen der Antwort
+    pruefen(antwort) {
+        return this.antwort === antwort;
     }
 }
 
-// Event listener for the "Nächste Frage" button
-document.getElementById('next-button').addEventListener('click', () => {
-    if (currentQuestionIndex < jsonData.length - 1) {
-        currentQuestionIndex++; // Move to the next question
-        displayQuestion(); // Display the next question
-    } else {
-        alert("Das ist die letzte Frage!"); // Alert for the last question
+const fragenObjekte = fragen.map((e) =>
+    new Frage(e.frage, e.optionen, e.antwort)
+);
+
+// Beispiel: Jede Frage anzeigens
+/*fragenObjekte.forEach((frage, index) => {
+    console.log(`Frage ${index + 1}:`);
+    frage.anzeigen();
+    console.log("---");
+});*/
+
+document.addEventListener("DOMContentLoaded", () => {
+    const startButton = document.getElementById("start-button");
+    const questionContainer = document.getElementById("question-container");
+    const questionText = document.getElementById("question");
+    const optionsList = document.getElementById("options");
+
+    function renderQuestion(frageObj) {
+        questionText.textContent = frageObj.frage;
+        optionsList.innerHTML = "";
+
+        frageObj.optionen.forEach(option => {
+            const li = document.createElement("li");
+            li.textContent = option;
+            optionsList.appendChild(li);
+        });
     }
-});
 
-// Initial call to display the first question
-displayQuestion();*/
-
-// Browser compatible version
-let jsonData = []; // Stores loaded questions
-let currentQuestionIndex = 0; // Tracks current question
-
-// Load questions from JSON file when page loads
-fetch('fragen.json')
-    .then(data => {
-        jsonData = data;
-        displayQuestion(); // Show first question
-    })
-    .catch(error => {
-        console.error('Error loading questions:', error);
-        document.getElementById('question').textContent = 
-            "Fehler beim Laden der Fragen.";
+    startButton.addEventListener("click", () => {
+        startButton.classList.add("hidden");
+        questionContainer.classList.remove("hidden");
+        renderQuestion(fragenObjekte[0]);
     });
-
-// Displays current question
-function displayQuestion() {
-    const questionElement = document.getElementById('question');
-    if (currentQuestionIndex < jsonData.length) {
-        questionElement.textContent = jsonData[currentQuestionIndex].frage;
-    } else {
-        questionElement.textContent = "Keine weiteren Fragen.";
-    }
-}
-
-// Handle next button clicks
-document.getElementById('next-button').addEventListener('click', () => {
-    if (currentQuestionIndex < jsonData.length - 1) {
-        currentQuestionIndex++;
-        displayQuestion();
-    } else {
-        alert("Das ist die letzte Frage!");
-    }
 });
