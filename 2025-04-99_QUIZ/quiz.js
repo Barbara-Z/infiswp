@@ -27,7 +27,7 @@ const fragenObjekte = fragen.map((e) =>
     new Frage(e.frage, e.optionen, e.antwort)
 );
 
-// Beispiel: Jede Frage anzeigens
+// Beispiel: Jede Frage anzeigen
 /*fragenObjekte.forEach((frage, index) => {
     console.log(`Frage ${index + 1}:`);
     frage.anzeigen();
